@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #faf6f0;
+  --foreground: #1b2a4a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Legacy MMPetMart tokens — kept for the admin dashboard only */
+  --color-primary: #f97316;
+  --color-primary-dark: #ea6c0a;
+  --color-secondary: #16a34a;
+  --color-secondary-dark: #15803d;
+
+  /* PetWago storefront palette — Navy & Gold Editorial (matches logo) */
+  --color-sage: #1b2a4a;
+  --color-sage-dark: #142036;
+  --color-sage-light: #2c4068;
+  --color-terracotta: #f2a93b;
+  --color-terracotta-dark: #dc931f;
+  --color-charcoal: #1b2a4a;
+  --color-cream: #faf6f0;
+  --color-cream-warm: #f3ece2;
+
+  --color-dark: #1b2a4a;
+  --color-muted: #8a8378;
+  --color-light: #faf6f0;
+  --color-border: #e4ddd3;
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
+  --font-mono: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Login modal entrance ── */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
